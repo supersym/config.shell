@@ -1,14 +1,7 @@
 
 
-# Oh My Z-Shell
+## Z-Shell Framework Oh-My-ZSH ###
 #
-#   /¯¯¯¯¯\ |¯¯¯|¯¯¯|  |¯¯¯\/¯¯¯| \¯¯¯|¯¯¯/||¯¯¯¯¯¯| /¯¯¯¯¯/ '|¯¯¯|¯¯¯|
-#   |  x  |'|       |° |       '|  \     /  /¯¯  __/ \ __¯¯¯\'|       |°
-#   \_____/ |___|___|  |__|\/|__|  |____|'  |______| /______/||___|___|
-#
-#
-#
-
 
 # Variable pointing to modified location
 ZSH=$HOME/.config/shell/.oh-my-zsh
@@ -16,25 +9,24 @@ ZSH=$HOME/.config/shell/.oh-my-zsh
 # Updated prefered (favorite) prompt themes
 ZSH_THEME="afowler"
 
-# Community and personalized plugins
+# Community and personalized plugins for applications and languages I use often so allocate the extra shell consumption of memory
 plugins=(archlinux cp taskwarrior sublime python cpanm git git-flow rvm ruby bundler gem node npm coffee orientdb)
 
-# Source default omz config
+# Source default omz configuration file (don't change this, upstream commits will undo your changes)
 source $ZSH/oh-my-zsh.sh
+
+# Override any settings here below after sourcing the defaults
 
 # Get rid of the TITLE error when using tmux
 DISABLE_AUTO_TITLE=true
 
-# Overrides from default omz settings
+# Extremely annoying auto correction of proper commands mistaken for something else
 unsetopt correct_all
 
 
-# Environment variables
-#    ___         _                            _
-#   | __|_ ___ _(_)_ _ ___ _ _  _ __  ___ _ _| |_
-#   | _|| ' \ V / | '_/ _ \ ' \| '  \/ -_) ' \  _|
-#   |___|_||_\_/|_|_| \___/_||_|_|_|_\___|_||_\__|
+## Environment variables ###
 #
+
 # Even for GUI based Pinentries; you should always set GPG_TTY.# }
 export GPG_TTY=$(tty) # do not use /dev/tty it *must* be real tty
 
@@ -53,12 +45,9 @@ export EDITOR="vim"
 
 
 
-# Executable program files found here
-#   ____   __   ____  _   _  ___
-#  (  _ \ /__\ (_  _)( )_( )/ __)
-#   )___//(__)\  )(   ) _ ( \__ \
-#  (__) (__)(__)(__) (_) (_)(___/
-
+## Executable program files found here ###
+#
+#
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/vendor_perl:/usr/bin/core_perl:$JAVA_HOME/bin
 
