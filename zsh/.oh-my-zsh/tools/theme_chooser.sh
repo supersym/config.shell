@@ -7,9 +7,9 @@
 # To Public License, Version 2, as published by Sam Hocevar. See
 # http://sam.zoy.org/wtfpl/COPYING for more details.
 
-THEMES_DIR="$ZSH/themes"
-FAVLIST="${HOME}/.zsh_favlist"
-source $ZSH/oh-my-zsh.sh
+THEMES_DIR="${ZSH}/themes"
+FAVLIST="${ZSH}/.zsh_favlist"
+source ${ZSH}/oh-my-zsh.sh
 
 function noyes() {
     read "a?$1 [y/N] "
