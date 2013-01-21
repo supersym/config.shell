@@ -4,7 +4,7 @@
 #
 
 # Variable pointing to modified location
-ZSH=$HOME/.config/shell/.oh-my-zsh
+ZSH=$HOME/.config/shell/zsh/.oh-my-zsh
 
 # Updated prefered (favorite) prompt themes
 ZSH_THEME="afowler"
