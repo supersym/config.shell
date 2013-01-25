@@ -1,0 +1,7 @@
+# Used to display markdown files inside the terminal with
+# ANSI markup instead of HTML tags. No one thought of this
+# earlier, this is a curses program written in C++ and
+# you should use `make` to build the project. Do this from
+# outside the directory like `make ../BSDmakefile` to keep
+# source and build files separated nicely.
+https://github.com/zielmicha/markdown-to-terminal.git
